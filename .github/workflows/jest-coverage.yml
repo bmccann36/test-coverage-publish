@@ -1,0 +1,20 @@
+name: 'jest-coverage'
+on:
+  # Runs on pushes targeting the default branch
+  push:
+    branches: ["main"]
+
+
+jobs:
+  coverage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: ArtiomTr/jest-coverage-report-action@v2
+        id: coverage
+        with:
+            coverage-file: coverage_output/merged_coverage.json
+            base-coverage-file: coverage_output/merged_coverage.json
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: ${{ steps.coverage.outputs.report }}
