@@ -14,8 +14,8 @@ jobs:
         id: coverage
         with:
             skip-step: all  
-            coverage-file: ./coverage_output/merged_coverage.json
-            base-coverage-file: ./coverage_output/merged_coverage.json
+            coverage-file: ./coverage_output/coverage-core.json
+            base-coverage-file: ./coverage_output/coverage-core.json
       - uses: marocchino/sticky-pull-request-comment@v2
         with:
           message: ${{ steps.coverage.outputs.report }}
