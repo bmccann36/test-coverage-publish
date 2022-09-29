@@ -13,6 +13,7 @@ jobs:
       - uses: ArtiomTr/jest-coverage-report-action@v2
         id: coverage
         with:
+            skip-step: all  
             coverage-file: ./coverage_output/merged_coverage.json
             base-coverage-file: ./coverage_output/merged_coverage.json
       - uses: marocchino/sticky-pull-request-comment@v2
