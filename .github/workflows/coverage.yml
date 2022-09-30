@@ -1,5 +1,4 @@
-name: coverage report
-
+name: 'coverage'
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -7,9 +6,23 @@ on:
 
 jobs:
   coverage:
+    permissions:
+      checks: write
+      pull-requests: write
+      contents: write
     runs-on: ubuntu-latest
     steps:
-      - uses: 5monkeys/cobertura-action@master
+      - uses: actions/checkout@v3
+      - uses: jwalton/gh-find-current-pr@v1
+        id: findPr
+      - uses: ArtiomTr/jest-coverage-report-action@v2
+        id: coverage
         with:
-          path: coverage_output/cobertura-coverage.xml
-          minimum_coverage: 1
+          prnumber: ${{ steps.findPr.outputs.number }}
+          output: report-markdown
+          skip-step: all
+          coverage-file: coverage-core.json
+          base-coverage-file: coverage-core.json
+      - uses: marocchino/sticky-pull-request-comment@v2
+        with:
+          message: ${{ steps.coverage.outputs.report }}
