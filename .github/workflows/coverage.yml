@@ -1,3 +1,5 @@
+name: coverage report
+
 on:
   # Runs on pushes targeting the default branch
   push:
@@ -10,4 +12,4 @@ jobs:
       - uses: 5monkeys/cobertura-action@master
         with:
           path: coverage_output/cobertura-coverage.xml
-          # minimum_coverage: 75
+          minimum_coverage: 1
