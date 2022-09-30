@@ -16,5 +16,5 @@ jobs:
 
       - name: gen coverage 
         uses: romeovs/lcov-reporter-action@v0.2.16
-          with:
-            lcov-file: ./lcov.info
+        with:
+          lcov-file: ./lcov.info
