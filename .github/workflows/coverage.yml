@@ -18,14 +18,13 @@ jobs:
         uses: MishaKav/jest-coverage-comment@main
         with:
           multiple-files: |
-            My-Title-1, ./coverage-summary.json
-            My-Title-2, ./erp-sync-summary.json
-          coverage-summary-path: ./coverage-summary.json
-          title: My Jest Coverage Comment
-          summary-title: My Summary Title
+            core-api, ./coverage-summary.json
+            integration-sync, ./erp-sync-summary.json
+          title: code coverage
+          # summary-title: My Summary Title
           badge-title: Coverage
           hide-comment: false
           create-new-comment: false
           hide-summary: false
-          coverage-title: My Coverage Title
+          # coverage-title: My Coverage Title
           # coverage-path: ./coverage.txt
