@@ -17,6 +17,9 @@ jobs:
       - name: Jest coverage comment
         uses: MishaKav/jest-coverage-comment@main
         with:
+          multiple-files: |
+            My-Title-1, ./coverage-summary.json
+            My-Title-2, ./erp-sync-summary.json
           coverage-summary-path: ./coverage-summary.json
           title: My Jest Coverage Comment
           summary-title: My Summary Title
