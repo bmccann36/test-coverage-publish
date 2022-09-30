@@ -5,6 +5,11 @@ on:
     branches: ["main","coverage"]
 
 jobs:
-  uses: romeovs/lcov-reporter-action@v0.2.16
-  with:
-    lcov-file: ./lcov.info
+
+  coverage:
+    # environment:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: romeovs/lcov-reporter-action@v0.2.16
+        with:
+          lcov-file: ./lcov.info
