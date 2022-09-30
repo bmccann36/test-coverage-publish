@@ -10,6 +10,11 @@ jobs:
     # environment:
     runs-on: ubuntu-latest
     steps:
-      - uses: romeovs/lcov-reporter-action@v0.2.16
-        with:
-          lcov-file: ./lcov.info
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: gen coverage 
+        uses: romeovs/lcov-reporter-action@v0.2.16
+          with:
+            lcov-file: ./lcov.info
