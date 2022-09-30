@@ -14,7 +14,15 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - name: gen coverage 
-        uses: romeovs/lcov-reporter-action@v0.2.16
+      - name: Jest coverage comment
+        uses: MishaKav/jest-coverage-comment@main
         with:
-          lcov-file: ./lcov.info
+          coverage-summary-path: ./coverage-summary.json
+          title: My Jest Coverage Comment
+          summary-title: My Summary Title
+          badge-title: Coverage
+          hide-comment: false
+          create-new-comment: false
+          hide-summary: false
+          coverage-title: My Coverage Title
+          # coverage-path: ./coverage.txt
