@@ -1,15 +1,28 @@
-name: coverage report
-
+name: 'coverage'
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main"]
+    branches: ["main","coverage"]
 
 jobs:
+
   coverage:
+    # environment:
     runs-on: ubuntu-latest
     steps:
-      - uses: 5monkeys/cobertura-action@master
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Jest coverage comment
+        uses: MishaKav/jest-coverage-comment@main
         with:
-          path: coverage_output/cobertura-coverage.xml
-          minimum_coverage: 1
+          coverage-summary-path: ./coverage-summary.json
+          title: My Jest Coverage Comment
+          summary-title: My Summary Title
+          badge-title: Coverage
+          hide-comment: false
+          create-new-comment: false
+          hide-summary: false
+          coverage-title: My Coverage Title
+          # coverage-path: ./coverage.txt
