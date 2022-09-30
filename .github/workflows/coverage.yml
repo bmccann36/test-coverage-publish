@@ -1,28 +1,30 @@
-name: 'coverage'
+name: "coverage"
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ["main","coverage"]
+    branches: ["*"]
+  pull_request:
+    types: [opened, reopened]
 
 jobs:
-
   coverage:
     # environment:
     runs-on: ubuntu-latest
     steps:
-
       - name: Checkout
         uses: actions/checkout@v3
 
       - name: Jest coverage comment
         uses: MishaKav/jest-coverage-comment@main
         with:
-          coverage-summary-path: ./coverage-summary.json
-          title: My Jest Coverage Comment
-          summary-title: My Summary Title
+          multiple-files: |
+            core-api, ./coverage-summary.json
+            integration-sync, ./erp-sync-summary.json
+          title: code coverage
+          # summary-title: My Summary Title
           badge-title: Coverage
           hide-comment: false
           create-new-comment: false
           hide-summary: false
-          coverage-title: My Coverage Title
+          # coverage-title: My Coverage Title
           # coverage-path: ./coverage.txt

@@ -1,0 +1,220 @@
+---------------------------------------|---------|----------|---------|---------|-------------------
+File                                   | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+---------------------------------------|---------|----------|---------|---------|-------------------
+All files                              |   50.96 |    33.78 |   43.42 |   48.09 |                   
+ common/src/db-access                  |   93.75 |       50 |     100 |     100 |                   
+  Transformer.ts                       |     100 |      100 |     100 |     100 |                   
+  initDataSource.ts                    |    92.3 |       50 |     100 |     100 | 10-24             
+ common/src/db-access/entity           |   99.26 |    55.55 |    98.5 |   99.32 |                   
+  AccountEntity.ts                     |     100 |      100 |     100 |     100 |                   
+  BaseEntity.ts                        |     100 |      100 |     100 |     100 |                   
+  BenchmarkEntity.ts                   |     100 |      100 |     100 |     100 |                   
+  BenchmarkHistory.ts                  |     100 |      100 |     100 |     100 |                   
+  CommodityEntity.ts                   |     100 |      100 |     100 |     100 |                   
+  CommodityStatus.ts                   |     100 |      100 |     100 |     100 |                   
+  ContactEntity.ts                     |     100 |      100 |     100 |     100 |                   
+  CustomerEntity.ts                    |   94.91 |      100 |   84.21 |     100 |                   
+  CustomerStatus.ts                    |     100 |      100 |     100 |     100 |                   
+  DbEnums.ts                           |     100 |      100 |     100 |     100 |                   
+  DeviceEntity.ts                      |     100 |      100 |     100 |     100 |                   
+  ErpSettingsEntity.ts                 |     100 |      100 |     100 |     100 |                   
+  ErpSyncBatchEntity.ts                |     100 |      100 |     100 |     100 |                   
+  ErpToolCredsEntity.ts                |     100 |      100 |     100 |     100 |                   
+  ErpToolSyncStatusEntity.ts           |     100 |      100 |     100 |     100 |                   
+  FinishedGoodCommoditiesVw.ts         |     100 |      100 |     100 |     100 |                   
+  FinishedGoodEntity.ts                |     100 |      100 |     100 |     100 |                   
+  FinishedGoodNoteEntity.ts            |     100 |      100 |     100 |     100 |                   
+  FinishedGoodStatusEntity.ts          |     100 |      100 |     100 |     100 |                   
+  GsUserEntity.ts                      |     100 |      100 |     100 |     100 |                   
+  InboundTicketEntity.ts               |   90.27 |        0 |   94.11 |   87.93 | 157-196,202-204   
+  InboundTicketNote.ts                 |     100 |      100 |     100 |     100 |                   
+  InboundTicketStatus.ts               |     100 |      100 |     100 |     100 |                   
+  IntegrationConfigEntity.ts           |     100 |      100 |     100 |     100 |                   
+  InventoryByMaterialTypeVw.ts         |     100 |      100 |     100 |     100 |                   
+  InventoryFinishedGoodVw.ts           |     100 |      100 |     100 |     100 |                   
+  InventoryPackingListVw.ts            |     100 |      100 |     100 |     100 |                   
+  InventoryRegradeVw.ts                |     100 |      100 |     100 |     100 |                   
+  InvoiceEntity.ts                     |     100 |      100 |     100 |     100 |                   
+  InvoicePaymentEntity.ts              |     100 |      100 |     100 |     100 |                   
+  InvoiceStatus.ts                     |     100 |      100 |     100 |     100 |                   
+  LocationEntity.ts                    |     100 |      100 |     100 |     100 |                   
+  MaterialEntity.ts                    |     100 |      100 |     100 |     100 |                   
+  MaterialStatus.ts                    |     100 |      100 |     100 |     100 |                   
+  MaterialStatusVw.ts                  |     100 |      100 |     100 |     100 |                   
+  MaterialTypeEntity.ts                |     100 |      100 |     100 |     100 |                   
+  MaterialTypeStatus.ts                |     100 |      100 |     100 |     100 |                   
+  OrganizationEntity.ts                |     100 |      100 |     100 |     100 |                   
+  OutboundTicketEntity.ts              |     100 |      100 |     100 |     100 |                   
+  OutboundTicketNoteEntity.ts          |     100 |      100 |     100 |     100 |                   
+  POMaterialVw.ts                      |     100 |      100 |     100 |     100 |                   
+  PackingListEntity.ts                 |     100 |      100 |     100 |     100 |                   
+  PackingListNoteEntity.ts             |     100 |      100 |     100 |     100 |                   
+  PackingListStatus.ts                 |     100 |      100 |     100 |     100 |                   
+  PaymentsEntity.ts                    |     100 |      100 |     100 |     100 |                   
+  PriceEntryEntity.ts                  |     100 |      100 |     100 |     100 |                   
+  PriceEntryHistoryEntity.ts           |     100 |      100 |     100 |     100 |                   
+  PriceSheetEntity.ts                  |     100 |      100 |     100 |     100 |                   
+  PurchaseOrderDetailsEntity.ts        |     100 |      100 |     100 |     100 |                   
+  PurchaseOrderEntity.ts               |     100 |      100 |     100 |     100 |                   
+  RegradeEntity.ts                     |     100 |      100 |     100 |     100 |                   
+  SalesOrderDetailsEntity.ts           |     100 |      100 |     100 |     100 |                   
+  SalesOrderEntity.ts                  |     100 |      100 |     100 |     100 |                   
+  VehicleEntity.ts                     |     100 |      100 |     100 |     100 |                   
+  WipCommoditiesVw.ts                  |     100 |      100 |     100 |     100 |                   
+  YardAtmEntity.ts                     |     100 |      100 |     100 |     100 |                   
+  YardEntity.ts                        |     100 |      100 |     100 |     100 |                   
+  index.ts                             |     100 |      100 |     100 |     100 |                   
+ common/src/db-access/model            |     100 |      100 |     100 |     100 |                   
+  enum.ts                              |     100 |      100 |     100 |     100 |                   
+  index.ts                             |     100 |      100 |     100 |     100 |                   
+ common/src/db-access/repository       |   46.91 |     4.16 |    20.8 |   40.31 |                   
+  CommodityRepository.ts               |      50 |      100 |   33.33 |   42.85 | 15-32             
+  CustomerRepository.ts                |      50 |      100 |   33.33 |   42.85 | 14-33             
+  DeviceRepository.ts                  |   66.66 |        0 |   33.33 |      60 | 14-23             
+  ErpBatchRepository.ts                |   49.09 |    18.18 |      50 |   47.16 | 128-328           
+  ErpSettingsRepository.ts             |     100 |      100 |     100 |     100 |                   
+  ErpToolSyncStatusRepository.ts       |   66.66 |      100 |   33.33 |      50 | 14-19             
+  FinishedGoodRepository.ts            |   27.45 |        0 |    6.66 |    23.4 | ...15-116,120-127 
+  IbtRepository.ts                     |    32.6 |        0 |   14.28 |    27.9 | ...51-269,275-277 
+  IntegrationConfigRepository.ts       |     100 |      100 |     100 |     100 |                   
+  InvoicePaymentRepository.ts          |    62.5 |      100 |       0 |      50 | 7,11-14           
+  InvoicesRepository.ts                |      50 |        0 |    37.5 |   47.05 | 70-105            
+  MaterialRepository.ts                |   38.77 |        0 |       0 |   29.26 | ...80,84-85,96-97 
+  MaterialTypeRepository.ts            |   69.23 |      100 |       0 |   55.55 | 6,15,25,34        
+  OrganizationRepository.ts            |   66.66 |      100 |       0 |      50 | 5                 
+  OutboundTicketRepository.ts          |    41.3 |        0 |       0 |   33.33 | ...02-105,111-114 
+  PackingListRepository.ts             |   30.61 |        0 |       0 |   23.25 | ...09-111,117-125 
+  PaymentsRepository.ts                |    37.5 |      100 |   16.66 |   28.57 | 41-116,128-142    
+  PriceEntryRepository.ts              |   26.08 |        0 |   16.66 |   15.78 | 18-76,81-84       
+  PriceSheetRepository.ts              |   36.84 |        0 |      20 |      25 | 16-53,58          
+  PurchaseOrderRepository.ts           |   57.69 |      100 |      10 |      45 | 22-49,56,60,69,81 
+  RegradeRepository.ts                 |      40 |        0 |       0 |   31.81 | ...34,38-46,50-55 
+  SalesOrderRepository.ts              |   58.62 |      100 |   27.27 |      50 | ...96-111,115-178 
+  YardAtmRepository.ts                 |   66.66 |      100 |       0 |      50 | 5                 
+  YardRepository.ts                    |      40 |        0 |      25 |   33.33 | 16-35             
+  common.ts                            |   28.57 |        0 |       0 |   16.66 | 6-13              
+  index.ts                             |     100 |      100 |     100 |     100 |                   
+ common/src/enums                      |     100 |      100 |     100 |     100 |                   
+  Erp.ts                               |     100 |      100 |     100 |     100 |                   
+  Payment.ts                           |     100 |      100 |     100 |     100 |                   
+  Role.ts                              |     100 |      100 |     100 |     100 |                   
+  index.ts                             |     100 |      100 |     100 |     100 |                   
+ common/src/models                     |   87.69 |    66.66 |    87.5 |   87.69 |                   
+  RestApi.ts                           |     100 |      100 |     100 |     100 |                   
+  common.ts                            |   84.31 |    58.82 |   83.33 |   84.31 | 40-60             
+  inbound-ticket.ts                    |     100 |      100 |     100 |     100 |                   
+  index.ts                             |     100 |      100 |     100 |     100 |                   
+ core-api/src                          |       0 |      100 |     100 |       0 |                   
+  index.ts                             |       0 |      100 |     100 |       0 | 1                 
+ core-api/src/api/mapper               |   61.22 |    47.66 |   47.97 |   61.68 |                   
+  AccountMapper.ts                     |   14.28 |      100 |       0 |   16.66 | 9-37              
+  BarcodeMapper.ts                     |     100 |      100 |     100 |     100 |                   
+  BenchmarkMapper.ts                   |     100 |      100 |     100 |     100 |                   
+  CommodityMapper.ts                   |     100 |      100 |     100 |     100 |                   
+  ContactMapper.ts                     |     100 |      100 |     100 |     100 |                   
+  CustomerMapper.ts                    |     100 |      100 |     100 |     100 |                   
+  FinishedGoodMapper.ts                |     100 |      100 |     100 |     100 |                   
+  InboundTicketMapper.ts               |      50 |     40.9 |    37.5 |   50.87 | ...44-260,268-279 
+  InvoiceMapper.ts                     |      40 |      100 |       0 |      40 | 11-40             
+  InvoicePaymentMapper.ts              |      25 |      100 |       0 |   28.57 | 13-51             
+  LocationMapper.ts                    |      60 |       75 |   44.44 |   61.53 | 10-14,34-38,62    
+  MaterialMapper.ts                    |      50 |    31.88 |      40 |      50 | ...93,164,178-185 
+  MaterialTypeMapper.ts                |   35.71 |      100 |   14.28 |   38.46 | 10,38-68          
+  OrganizationMapper.ts                |   23.52 |        0 |       0 |   26.66 | 16-64             
+  OutboundTicketMapper.ts              |    6.97 |        0 |       0 |    7.14 | 13-138            
+  PackingListMapper.ts                 |   10.25 |        0 |       0 |   10.52 | 15-106            
+  PaymentsMapper.ts                    |   44.44 |        0 |      20 |      50 | 11-60             
+  PriceEntryMapper.ts                  |   96.66 |    81.08 |     100 |   96.47 | 107,139-141       
+  PriceSheetMapper.ts                  |   91.66 |      100 |   77.77 |   95.23 | 20                
+  PurchaseOrderDetailsMapper.ts        |      40 |        0 |       0 |      40 | 9-22              
+  PurchaseOrderMapper.ts               |   18.18 |        0 |       0 |   18.18 | 16-93             
+  RegradeMapper.ts                     |      90 |    66.66 |   71.42 |   89.47 | 53,65             
+  SalesOrderDetailsMapper.ts           |      40 |        0 |       0 |      40 | 9-23              
+  SalesOrderMapper.ts                  |   18.18 |        0 |       0 |   18.18 | 12-92             
+  VehicleMapper.ts                     |   68.42 |    81.81 |   63.63 |   68.75 | 9-13,34,63,68     
+  YardMapper.ts                        |      20 |       50 |   14.28 |      25 | 7-23,52           
+ core-api/src/api/models/dto           |   91.52 |    66.66 |     100 |   91.52 |                   
+  common.ts                            |   88.63 |    66.66 |     100 |   88.63 | 34-46             
+  index.ts                             |     100 |      100 |     100 |     100 |                   
+ ...-api/src/api/models/memoryDatabase |   14.28 |        0 |    6.25 |   15.27 |                   
+  mock-db.ts                           |   14.28 |        0 |    6.25 |   15.27 | 26-165            
+ core-api/src/api/models/runtime       |    62.5 |      100 |      50 |    62.5 |                   
+  GreensparkEntityNotFoundError.ts     |      25 |      100 |       0 |      25 | 3-9               
+  GreensparkError.ts                   |     100 |      100 |     100 |     100 |                   
+ ...api/src/api/services/businessLogic |   21.36 |    14.17 |      20 |   20.75 |                   
+  account-logic.ts                     |      72 |       50 |    37.5 |   72.09 | ...,87-94,102-108 
+  asset-logic.ts                       |   61.53 |    42.85 |   42.85 |   60.52 | ...47-56,76-85,98 
+  atm-logic.ts                         |   73.33 |        0 |     100 |   73.33 | 30-35             
+  benchmark-logic.ts                   |   17.14 |        0 |       0 |   17.64 | 14-83             
+  commodity-logic.ts                   |   21.87 |        0 |       0 |   22.58 | 13-57             
+  customer-logic.ts                    |   17.72 |        0 |       0 |   19.17 | 22-25,123-229     
+  device-logic.ts                      |       0 |        0 |       0 |       0 | 1-89              
+  finished-goods.ts                    |    6.09 |        0 |       0 |    6.28 | 63-448            
+  inventory-logic.ts                   |       0 |        0 |       0 |       0 | 10-288            
+  invoice-logic.ts                     |    9.43 |        0 |       0 |    9.43 | 18-144            
+  invoice-payment-logic.ts             |   26.92 |        0 |       0 |   26.92 | 18-62             
+  material-logic.ts                    |    8.69 |       25 |    9.52 |    8.88 | ...98,203,216-367 
+  material-type-logic.ts               |      28 |        0 |       0 |   29.16 | 19-53             
+  organization-logic.ts                |   48.38 |     37.5 |   42.85 |   48.27 | 13-16,29-62       
+  packing-list-logic.ts                |    6.48 |        0 |       0 |    6.66 | 25-242            
+  payments-logic.ts                    |       0 |        0 |       0 |       0 | 1-251             
+  price-entry-logic.ts                 |   88.57 |    62.16 |   93.75 |   90.62 | ...4-57,65-66,104 
+  price-sheet-logic.ts                 |    30.3 |        0 |   33.33 |   31.25 | 23-62             
+  purchase-order-logic.ts              |   16.03 |        0 |      10 |      15 | ...97,206,209,215 
+  regrades-logic.ts                    |    11.6 |        0 |   16.66 |      11 | 45-181,197-288    
+  sales-order-logic.ts                 |   16.45 |        0 |       0 |   14.47 | ...49-151,157-169 
+  validate.ts                          |   52.33 |    31.42 |   58.62 |   51.06 | ...39,251-275,292 
+  yard-logic.ts                        |       0 |        0 |       0 |       0 | 1-75              
+ ...vices/businessLogic/inbound-ticket |   68.51 |     64.1 |   69.44 |   68.89 |                   
+  inbound-ticket-events.ts             |   41.66 |      100 |       0 |   36.36 | 15-36             
+  inbound-ticket-helper.ts             |   92.59 |    81.81 |    87.5 |   91.89 | 94-101,118        
+  inbound-ticket-logic.ts              |   59.32 |    61.84 |   66.66 |   60.94 | ...07,315-436,443 
+ ...ices/businessLogic/outbound-ticket |    9.79 |        0 |       0 |   10.13 |                   
+  outbound-tickets-flow.ts             |   14.06 |        0 |       0 |   14.75 | 25-200            
+  outbound-tickets-logic-helper.ts     |    6.76 |        0 |       0 |    7.14 | 44-368            
+  outbound-tickets-logic.ts            |   11.11 |        0 |       0 |   11.11 | 25-208            
+ ...pi/src/api/services/compositeLogic |    5.95 |        0 |       0 |    6.29 |                   
+  material-type-composite-logic.ts     |    8.97 |        0 |       0 |    9.85 | 16-40,51-215      
+  price-sheet-composite-logic.ts       |     6.7 |        0 |       0 |    7.01 | 36-46,53-549      
+  upload-inventory-logic.ts            |       0 |        0 |       0 |       0 | 1-238             
+ core-api/src/handlers                 |   42.24 |    42.85 |   26.95 |   42.08 |                   
+  account-handler.ts                   |   69.23 |     87.5 |      50 |   69.23 | 38-39,43-50       
+  asset-handler.ts                     |   66.66 |       75 |   66.66 |   64.28 | 24,36-52          
+  authorizer.ts                        |   79.31 |    66.66 |   71.42 |   81.13 | ...37,44-46,96,98 
+  benchmark-handler.ts                 |       0 |        0 |       0 |       0 | 1-62              
+  commodity-handler.ts                 |    40.9 |        0 |       0 |   38.09 | ...22,27-29,36-37 
+  customer-handler.ts                  |   95.23 |       50 |      80 |     100 | 14-25             
+  device-handler.ts                    |       0 |      100 |       0 |       0 | 1-22              
+  external-handler.ts                  |      68 |     62.5 |     100 |      68 | 26,41-59          
+  finished-goods.ts                    |       0 |        0 |       0 |       0 | 1-87              
+  inbound-ticket-handler.ts            |   29.16 |        0 |       0 |   29.16 | ...20,24-26,30-37 
+  index.ts                             |     100 |      100 |     100 |     100 |                   
+  inventory-handler.ts                 |       0 |        0 |       0 |       0 | 1-28              
+  invoice-handler.ts                   |      75 |    33.33 |      60 |      75 | 41-44,66-67,79-81 
+  invoice-payment-handler.ts           |     100 |      100 |     100 |     100 |                   
+  material-handler.ts                  |   44.44 |        0 |       0 |   44.44 | 18-19,23-25       
+  material-type-handler.ts             |    37.2 |        0 |       0 |   36.58 | ...52,57-58,63-65 
+  organization-handler.ts              |     100 |       50 |     100 |     100 | 13-33             
+  outbound-ticket-handler.ts           |   46.87 |       25 |      20 |   46.87 | ...67,71-85,89-91 
+  packing-list-handler.ts              |   28.57 |        0 |       0 |   28.57 | ...41,46-59,63-65 
+  payments-handler.ts                  |       0 |        0 |       0 |       0 | 1-89              
+  permissions-handler.ts               |   93.33 |       80 |     100 |   93.33 | 84                
+  price-entry-handler.ts               |       0 |        0 |       0 |       0 | 1-31              
+  price-sheet-handler.ts               |      30 |        0 |       0 |   28.26 | ...42,46-57,61-72 
+  purchase-order-handler.ts            |       0 |        0 |       0 |       0 | 1-105             
+  regrades-handler.ts                  |       0 |        0 |       0 |       0 | 3-34              
+  sales-order-handler.ts               |       0 |        0 |       0 |       0 | 1-103             
+  utilities.ts                         |   78.87 |    79.24 |   81.81 |   78.57 | ...21-128,192-199 
+  yard-handler.ts                      |   63.33 |    11.11 |   33.33 |   63.33 | ...21,26-27,32-34 
+ core-api/src/utilities                |   58.73 |    43.75 |   31.81 |   59.82 |                   
+  findUndefined.js                     |       0 |        0 |       0 |       0 | 1-10              
+  generateTag.js                       |      20 |      100 |       0 |   22.22 | 5-15              
+  getCollection.ts                     |       0 |      100 |       0 |       0 | 1-2               
+  getStatusObj.js                      |       0 |      100 |       0 |       0 | 1                 
+  handleWarmerEvent.ts                 |   23.07 |        0 |       0 |      25 | 6-18              
+  isUuid.js                            |       0 |      100 |       0 |       0 | 1                 
+  mapAsync.js                          |     100 |      100 |     100 |     100 |                   
+  price-utility.ts                     |   72.58 |    46.15 |      50 |   72.58 | ...,94,98-107,111 
+  states.js                            |     100 |      100 |     100 |     100 |                   
+  weight-utility.ts                    |      75 |        0 |       0 |   66.66 | 4                 
+---------------------------------------|---------|----------|---------|---------|-------------------
